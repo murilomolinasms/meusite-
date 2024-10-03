@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Clara Martinez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #007bff;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }
+        .banner {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        img {
+            margin: 15px;
+            border: 1px solid #ccc;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-container label {
+        
+            margin-bottom: 8px;
+            margin-top: 10px;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portfólio de Clara Martinez</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="sobre.php">Sobre</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section class="banner" id="home">
+    <h2>Bem-vindo ao meu site de!</h2>
+    <p>Sou uma fotógrafa apaixonada por capturar momentos especiais e emoções autênticas.</p>
+</section>
+
+<section class="container" id="trabalhos">
+    <img src="eventos1 (1).jpg" width="300px" height="300px" alt="Imagem 1">
+    <img src="eventos1 (2).jpg" width="300px" height="300px" alt="Imagem 2">
+    <img src="eventos1 (3).jpg" width="300px" height="300px" alt="Imagem 3">
+    <img src="eventos1 (4).jpg" width="300px" height="300px" alt="Imagem 4">
+    <img src="eventos1 (5).jpg" width="300px" height="300px" alt="Imagem 5">
+    <img src="eventos1 (6).jpg" width="300px" height="300px" alt="Imagem 6">
+    
+    <img src="eventos1 (8).jpg" width="300px" height="300px" alt="Imagem 8">
+    <img src="eventos1 (9).jpg" width="300px" height="300px" alt="Imagem 9">
+</section>
+
+<section class="form-container" id="contato">
+    <h3>Faça um orçamento sem compromisso</h3>
+    <form action="1.php" method="POST">
+       
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</body>
+</html>
